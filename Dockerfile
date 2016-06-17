@@ -36,8 +36,6 @@ RUN \
 
 # add custom files
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY config_init.sh /usr/local/bin/config_init.sh
-RUN chmod +x /usr/local/bin/config_init.sh
 
 RUN \
   git clone -q git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato && \
