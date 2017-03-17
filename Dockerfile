@@ -12,6 +12,7 @@ RUN \
   apt-get install -y curl git supervisor && \
   apt-get install -y libxslt1-dev libxslt1.1 libxml2-dev \
     libxml2 libssl-dev libffi-dev python-pip python-dev libssl-dev && \
+  apt-get install -y python-openssl python-lxml python-pyparsing && \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
